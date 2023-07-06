@@ -8,6 +8,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.ANNOTATION_TYPE)
 public @interface Template {
-    String template() default "";
-    String name() default "";
+  String template() default "";
+
+  String name() default "";
 }

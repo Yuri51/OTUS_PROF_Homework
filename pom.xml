@@ -15,6 +15,8 @@
         <junit.version>5.9.3</junit.version>
         <webdrivermanager.version>5.3.3</webdrivermanager.version>
         <selenium.java.version>3.141.59</selenium.java.version>
+        <assertj.version>3.24.2</assertj.version>
+
         <surefire.plugin.version>2.22.2</surefire.plugin.version>
         <checkstyle.plugin.version>3.3.0</checkstyle.plugin.version>
         <spotbugs.version>4.7.3.4</spotbugs.version>
@@ -46,13 +48,23 @@
             <artifactId>selenium-java</artifactId>
             <version>${selenium.java.version}</version>
         </dependency>
+        <dependency>
+            <groupId>antlr</groupId>
+            <artifactId>antlr</artifactId>
+            <version>2.7.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj.version}</version>
+        </dependency>
     </dependencies>
 
     <profiles>
         <profile>
             <id>prod</id>
             <properties>
-            <base.url>https://otus.ru/</base.url>
+            <base.url>https://hi-tech.mail.ru/</base.url>
             </properties>
         </profile>
         <profile>
