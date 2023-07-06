@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import waiters.Waiters;
 import java.util.List;
 
-public abstract class AbsPageObject {
+public abstract class AbsPageObject<T> {
 
   protected WebDriver driver;
   protected Actions actions;

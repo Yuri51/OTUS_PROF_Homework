@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pageobject.AbsPageObject;
 
-public abstract class AbsBasePage<T> extends AbsPageObject {
+public abstract class AbsBasePage<T> extends AbsPageObject<T> {
 
   private static final String BASE_URL = System.getProperty("base.url");
 
