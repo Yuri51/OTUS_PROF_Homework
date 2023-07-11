@@ -45,5 +45,4 @@ public abstract class AbsPageObject<T> {
       return By.cssSelector(locator);
     }
   }
-
 }

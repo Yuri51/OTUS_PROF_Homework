@@ -4,9 +4,10 @@ import exceptions.BrowserNotSupportedException;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.config.Config;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 public interface IDriver {
-  public WebDriver newDriver();
+  public EventFiringWebDriver newDriver();
 
   default void downloadLocalWebDriver(String browser) throws BrowserNotSupportedException {
     Config wdmConfig = WebDriverManager.getInstance().config();

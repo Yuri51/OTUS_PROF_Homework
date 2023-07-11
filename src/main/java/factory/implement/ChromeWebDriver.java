@@ -1,17 +1,17 @@
 package factory.implement;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import java.util.logging.Level;
 
 public class ChromeWebDriver implements IDriver {
 
   @Override
-  public WebDriver newDriver() {
+  public EventFiringWebDriver newDriver() {
     ChromeOptions chromeOptions = new ChromeOptions();
     chromeOptions.addArguments("--no-sandbox");
     chromeOptions.addArguments("--no-first-run");
@@ -27,6 +27,6 @@ public class ChromeWebDriver implements IDriver {
     logPrefs.enable(LogType.PERFORMANCE, Level.INFO);
     chromeOptions.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
 
-    return new ChromeDriver(chromeOptions);
+    return new EventFiringWebDriver(new ChromeDriver(chromeOptions));
   }
 }
