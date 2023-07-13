@@ -5,12 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-public class EducationMenuComponent extends AbsComponent<EducationMenuComponent>{
-  public EducationMenuComponent(WebDriver driver){
+public class EducationMenuComponent extends AbsComponent<EducationMenuComponent> {
+  public EducationMenuComponent(WebDriver driver) {
     super(driver);
   }
-
-//  private String EducationMenuLocator = "//div[div/p[text()='Все курсы']]";
 
   private String educationMenu = "//div[span[@title='%s']]";
   private String educationMenuDownLocator = educationMenu + "//div[div/p[text()='Все курсы']]";

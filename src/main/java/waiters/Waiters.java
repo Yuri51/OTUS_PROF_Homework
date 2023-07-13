@@ -11,7 +11,7 @@ public class Waiters {
   private WebDriverWait webDriverWait = null;
 
   public Waiters(WebDriver driver) {
-    webDriverWait = new WebDriverWait(driver, 10);
+    webDriverWait = new WebDriverWait(driver, 2);
   }
 
   public boolean waitForCondition(ExpectedCondition condition) {

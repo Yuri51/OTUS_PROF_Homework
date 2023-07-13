@@ -22,7 +22,7 @@
         <spotbugs.version>4.7.3.4</spotbugs.version>
 
         <browser>chrome</browser>
-        <base.url/>
+        <base.url>https://otus.ru/</base.url>
     </properties>
 
     <dependencies>
