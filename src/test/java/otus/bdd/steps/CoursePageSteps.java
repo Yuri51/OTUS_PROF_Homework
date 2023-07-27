@@ -8,9 +8,14 @@ public class CoursePageSteps {
     @Inject
     private CoursePage coursePage;
 
-        @Тогда("Откроется страница с названием курса {string}")
-    public void pageCourseShouldBeSameAs(String title){
+    @Тогда("Откроется страница с названием курса {string}")
+    public void pageCourseShouldBeSameAs(String title) {
         coursePage.coursePageIsOpened(title);
+    }
 
+    @Tогда("Откроется страница курса")
+    public void pageCourseIsOpened()
+    {
+        coursePage.coursePageIsOpened();
     }
 }

@@ -23,6 +23,7 @@ public class AbsComponent<T> extends AbsPageObject<T> {
     waiters.waitForCondition(ExpectedConditions.visibilityOf(element));
     actions.moveToElement(element);
     actions.click().build().perform();
+
   }
 }
 

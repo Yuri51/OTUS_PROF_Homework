@@ -27,7 +27,7 @@ public class CoursesTilesComponent extends AbsComponent<CoursesTilesComponent> {
   }
 
   private String coursesNamesInSectionSelector = "div>h5";
-  private String courseNameSelector = "div[title='%s']";
+  private String courseNameSelector = "div>picture>img[alt='%s']";
   private String courseStartDateLocator = "//span[contains(text(), 'С ')]";
   private String courseTrainingPeriodLocator = "//span[contains(text(), 'месяц')]";
 

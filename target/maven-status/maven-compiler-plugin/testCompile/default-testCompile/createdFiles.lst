@@ -1,0 +1,6 @@
+otus\bdd\hooks\Hooks.class
+otus\bdd\steps\MainPageSteps.class
+otus\bdd\steps\CoursesBlockSteps.class
+otus\bdd\Runner_Test.class
+otus\bdd\steps\CommonSteps.class
+otus\bdd\steps\CoursePageSteps.class

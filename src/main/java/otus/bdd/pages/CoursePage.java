@@ -15,12 +15,10 @@ public class CoursePage extends AbsBasePage<CoursePage> {
   @Inject
   public CoursePage(UIGuiceScoped scenarioScoped) { super(scenarioScoped); }
 
-  private String courseNameHeaderLocator = "//div//div/h1[contains (text(), '%s')]";
+  private String courseNameHeaderLocator = "//*[contains(@class, 'course-header2__title')][contains (text(), '%s')]";
 
   public void coursePageIsOpened(String title) {
     Assertions.assertEquals((guiceScoped.driver.findElement(By.xpath(String.format(courseNameHeaderLocator, title))).getText()), title);
-//.as("Course name is not visible")
-//            .isVisible();
 //    assertThat(guiceScoped.driver.findElement(By.xpath(String.format(courseNameHeaderLocator, title))).getText(),title);
 //        .as("Course name is not visible")
 //        .isVisible();
