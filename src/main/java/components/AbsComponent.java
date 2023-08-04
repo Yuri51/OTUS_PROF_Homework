@@ -6,7 +6,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import pageobject.AbsPageObject;
 
-public class AbsComponent<T> extends AbsPageObject<T> {
+public abstract class AbsComponent<T> extends AbsPageObject<T> {
 
   public AbsComponent(WebDriver driver) {
     super(driver);

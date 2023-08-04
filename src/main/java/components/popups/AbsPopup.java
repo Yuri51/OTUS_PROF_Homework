@@ -5,7 +5,7 @@ import exceptions.PathEmptyException;
 import org.openqa.selenium.WebDriver;
 import pageobject.AbsPageObject;
 
-public class AbsPopup<T> extends AbsPageObject<T> implements IPopup<T> {
+public abstract class AbsPopup<T> extends AbsPageObject<T> implements IPopup<T> {
   public AbsPopup(WebDriver driver) {
     super(driver);
   }

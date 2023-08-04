@@ -12,7 +12,7 @@ public class CoursePage extends AbsBasePage<CoursePage> {
     super(driver);
   }
 
-  private String courseNameHeader = "div>div>h1";
+  private String courseNameHeader = "h1";
 
   public CoursePage coursePageIsOpen() {
     assertThat(courseNameHeader)

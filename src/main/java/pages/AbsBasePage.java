@@ -15,7 +15,7 @@ public abstract class AbsBasePage<T> extends AbsPageObject<T> {
 
   private static final String BASE_URL = System.getProperty("base.url");
 
-  @FindBy(css = "div>a[href='https://otus.ru/']")
+  @FindBy(xpath = "//h2[text()='Авторские онлайн‑курсы для профессионалов']")
   private WebElement header;
 
   public T pageHeaderShouldBeVisible() {
@@ -27,7 +27,7 @@ public abstract class AbsBasePage<T> extends AbsPageObject<T> {
 
   public T pageHeaderShouldBeSameAs(String header) {
     assertThat(this.header.getText())
-        .as("header should be {}", header)
+        .as("Header should be {}", header)
         .isEqualTo(header);
     return (T) this;
   }

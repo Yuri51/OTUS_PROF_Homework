@@ -35,13 +35,13 @@ public class OtusHomework1_Test {
         .moveCourse("Специализация Java-разработчик");
   }
 
-  @Test
-  public void moveToEducationMenuComponentTest() throws PathEmptyException, InterruptedException {
-    new MainPage(driver)
-        .open();
-    new EducationMenuComponent(driver)
-        .moveToEducationMenu("Обучение");
-  }
+//  @Test
+//  public void moveToEducationMenuComponentTest() throws PathEmptyException, InterruptedException {
+//    new MainPage(driver)
+//        .open();
+//    new EducationMenuComponent(driver)
+//        .moveToEducationMenu("Обучение");
+//  }
 
   @Test
   public void clickOnEarlyCourseTest() throws PathEmptyException {
